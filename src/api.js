@@ -2,7 +2,7 @@ import axios from "axios";
 
 const backendPortNumber = "5000";
 const serverUrl =
-  "https://" + window.location.hostname + ":" + backendPortNumber + "/";
+  "https://animal-forest.herokuapp.com/";
 
 async function get(endpoint) {
   console.log(`GET 요청 ${serverUrl + endpoint}`);
