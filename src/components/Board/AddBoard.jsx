@@ -24,11 +24,6 @@ const AddBoard = () => {
   const onEditorChange = (editorState) => {
     const contentState = editorState.getCurrentContent();
     setEditorState(editorState);
-    console.log(contentState);
-    console.log(
-      "editor",
-      JSON.stringify(convertToRaw(editorState.getCurrentContent()))
-    );
   };
 
   const fileHandler = (e) => {
@@ -37,11 +32,9 @@ const AddBoard = () => {
       //   return [[...e.target.files].map((item) => item[0])];
       // });
       [...e.target.files].map((item) => {
-        console.log("mapTest======>", item);
         setPostFiles((v) => [...v, item]);
       });
     } else {
-      console.log("one fileHandle", e.target.files);
       setFileName(e.target.files[0].name);
       setPostFiles(e.target.files[0]);
     }
@@ -74,7 +67,6 @@ const AddBoard = () => {
       formData.append("content", content);
       formData.append("nickname", nickname);
 
-      console.log("formData=====>", formData.get("images"));
       try {
         const response = await axios.post(
           "https://animal-forest.vercel.app:5000/posts",

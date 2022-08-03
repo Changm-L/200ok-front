@@ -4,24 +4,6 @@ import { BarChart, Bar, XAxis, YAxis,
 	CartesianGrid, Legend, Tooltip } from 'recharts';
 
 const HobbyChart = () => {
-  // ** 백엔드랑 통신하면 애니메이션이 적용되지 않음 **
-  // const [dataList, setDataList] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
-  
-  // async function getDataList() {
-  //   try {
-  //     const { data } = await Api.get('stats?groupName=hobby');
-  //     setDataList([...Object.values(data.payload)]);
-  //     console.log(data);
-  //     setIsLoading(false);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   getDataList();
-  // }, []);
 
 	const data = [
     { name: '교육', 여성: 32, 남성: 32 },

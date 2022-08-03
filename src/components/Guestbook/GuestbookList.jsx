@@ -75,7 +75,6 @@ const GuestbookList = () => {
   const getModalData = async () => {
     try {
       const { data } = await Api.get(`guestbooks/userId?userId=${userId}`);
-      console.log(data);
       setGuestbook(data.payload);
       setCount(data.payload.length);
       setContent(data.payload.content);
@@ -90,7 +89,6 @@ const GuestbookList = () => {
     getDataList();
     // 처음에 null 값이 들어있어서 오류 => not null일 때만 사용하도록 조건 추가
     if (userId !== null) {
-      console.log("userId no null");
       getModalData();
     }
   }, []);

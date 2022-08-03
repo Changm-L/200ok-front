@@ -44,7 +44,6 @@ const Read = () => {
         return newComment;
       });
       setCommentContent("");
-      console.log("댓글 post: ", response.data);
     } catch (err) {
       console.error(err);
     }
@@ -65,9 +64,7 @@ const Read = () => {
       console.error(err);
     }
   };
-  useEffect(() => {
-    console.log(editorState);
-  }, [editorState]);
+
   // 댓글 데이터 요청
   const fetchCommentData = async () => {
     try {
@@ -75,7 +72,6 @@ const Read = () => {
         `comments?villager=${id}&location=post-comment`
       );
       setCommentList([...Object.values(data.payload)]);
-      console.log(commentList);
     } catch (err) {
       setCommentList([]);
       console.error(err);

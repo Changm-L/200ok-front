@@ -24,7 +24,6 @@ const AddGuestbook = () => {
       const { data } = await Api.post("guestbooks", {
         content: content,
       });
-      console.log("data.payload==========>", data.payload);
       setUserId(data.payload.id);
       navigate("/guestbook");
       setIsTyping(false);

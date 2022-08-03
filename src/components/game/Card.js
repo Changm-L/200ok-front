@@ -16,7 +16,6 @@ const Card = ({ name, chImage }) => {
   const handleClick = (e) => {
     cardRef.current = true;
     setIsFlipped((v) => !v);
-    console.log(cardRef);
   };
   const styles = {
     border: "none",

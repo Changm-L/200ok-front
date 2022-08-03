@@ -42,9 +42,9 @@ const GameItem = () => {
     try {
       let url;
       if (!tier) {
-        url = "https://animal-forest.vercel.app:5000/characters/random?size=8&tiers=1&fields=name_ko,image_photo";
+        url = "characters/random?size=8&tiers=1&fields=name_ko,image_photo";
       } else {
-        url = `https://animal-forest.vercel.app:5000/characters/random?size=8&tiers=${tier}&fields=name_ko,image_photo`;
+        url = `characters/random?size=8&tiers=${tier}&fields=name_ko,image_photo`;
       }
       const { data } = await Api.get(url);
       await setAnswer([...data.payload]);

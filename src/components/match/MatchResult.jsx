@@ -46,8 +46,6 @@ function MatchResult() {
       const { data } = await Api.get(`csmdata/${id}/count`);
       setCharAndTotal(data.payload);
       setUserId(data.payload.uuid);
-      console.log("userId ???", userId);
-      console.log("나와 궁합이 맞는 주민", data.payload);
       return data.payload;
     } catch (err) {
       console.error(err);
@@ -59,7 +57,6 @@ function MatchResult() {
     try {
       const { data } = await Api.get(`csmdata/${id}?top=1&bottom=1`);
       setGoodBad(data.payload);
-      console.log("Good & Bad", data.payload);
     } catch (err) {
       console.error(err);
     }
@@ -70,7 +67,6 @@ function MatchResult() {
     try {
       const { data } = await Api.get(`csmdata/counts`);
       setBest3(data.payload);
-      console.log("Best 3명", data.payload);
     } catch (err) {
       console.error(err);
     }

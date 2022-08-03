@@ -2,7 +2,7 @@ import axios from "axios";
 
 const backendPortNumber = "5000";
 const serverUrl =
-  "http://" + window.location.hostname + ":" + backendPortNumber + "/";
+  "https://" + window.location.hostname + ":" + backendPortNumber + "/";
 
 async function get(endpoint) {
   console.log(`GET 요청 ${serverUrl + endpoint}`);

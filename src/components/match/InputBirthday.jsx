@@ -57,8 +57,6 @@ function InputBirthday({ nextSlide }) {
   };
 
   const handleChangeD = (event) => {
-    console.log(day);
-    console.log(typeof day);
     setDay(event.target.value);
   };
 

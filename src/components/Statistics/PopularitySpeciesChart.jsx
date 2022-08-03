@@ -26,8 +26,6 @@ const PopularityBySpeciesChart = () => {
   useEffect(() => {
     getDataList();
   }, []);
-  
-  console.log("data :", dataList);
 
   return (
     <div className="graphDesc">

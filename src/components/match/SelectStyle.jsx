@@ -47,7 +47,6 @@ const SelectStyle = ({ array }) => {
   };
 
   useEffect(() => {
-    console.log("MatchElem", matchElem);
     if (matchElem.length === 6 && id === null) {
       fetchResultData();
       return navigator("/match-result");
