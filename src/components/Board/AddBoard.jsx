@@ -77,7 +77,7 @@ const AddBoard = () => {
       console.log("formData=====>", formData.get("images"));
       try {
         const response = await axios.post(
-          "http://localhost:5001/posts",
+          "https://animal-forest.vercel.app:5000/posts",
           formData,
           {
             headers: {

@@ -202,7 +202,7 @@ const Read = () => {
                 <div className="eachSlide">
                   <div
                     style={{
-                      backgroundImage: `url(http://localhost:5001/uploads/${images[0]})`,
+                      backgroundImage: `url(https://animal-forest.vercel.app:5000/uploads/${images[0]})`,
                     }}
                   ></div>
                 </div>
@@ -216,7 +216,7 @@ const Read = () => {
                     <div className="eachSlide" key={`image${idx}`}>
                       <div
                         style={{
-                          backgroundImage: `url(http://localhost:5001/uploads/${images[idx]})`,
+                          backgroundImage: `url(https://animal-forest.vercel.app:5000/uploads/${images[idx]})`,
                         }}
                       ></div>
                     </div>

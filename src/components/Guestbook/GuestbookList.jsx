@@ -124,7 +124,6 @@ const GuestbookList = () => {
     setModal((v) => !v);
     setContent(element.content);
     setDate(element.createdAt);
-    console.log("여긴가");
   };
 
   return (

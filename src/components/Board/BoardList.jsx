@@ -54,7 +54,7 @@ const BoardList = () => {
               return (
                 <Card
                   key={idx}
-                  src={`http://localhost:5001/uploads/${post.images[0]}`}
+                  src={`https://animal-forest.vercel.app:5000/uploads/${post.images[0]}`}
                   onClick={() => navigate(`/board/${post.id}`)}
                 >
                   <Title> {title} </Title>
@@ -75,7 +75,7 @@ const BoardList = () => {
             return (
               <Card
                 key={idx}
-                src={`http://localhost:5001/uploads/${post.images[0]}`}
+                src={`https://animal-forest.vercel.app:5000/uploads/${post.images[0]}`}
                 onClick={() => navigate(`/board/${post.id}`)}
               >
                 <Title> {title} </Title>
